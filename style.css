@@ -26,16 +26,17 @@ body{
     top: 0%;
 }
 nav{
-    max-width: 80vw;
+    max-width: 60vw;
     height: 53px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 16px;
 }
 
 nav img{
-    width: 140px;
+    width: 10rem;
     position: relative;
     z-index: 1;
 }
@@ -46,7 +47,7 @@ nav div button{
 
 .hero{
     font-family: "Martel Sans", serif;
-    height: calc(100% - 53px);
+    height: calc(100% - 84px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +108,7 @@ nav div button{
     color: white;
     border: 2px solid red;
 }
-.main input{
+.E-ID input{
     padding: 10px 40px 10px 12px;
     color: white;
     font-size: 16px;
@@ -121,6 +122,8 @@ nav div button{
 .E-ID{
     display: flex;
     gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .first{
@@ -133,6 +136,7 @@ nav div button{
     color: white;
     font-size: 25px;
     padding: 80px 0px 80px 0px;
+    flex-wrap: wrap;
 }
 
 .secImg img{
@@ -180,13 +184,14 @@ nav div button{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 6px 15px;
     margin: 14px auto;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: lighter;
     display: flex;
     justify-content: space-between;
     max-width: 40vw;
     background-color: #2f2f2f;
     cursor: pointer;
+    transition: all .5s ease-out;
 }
 .faqbox svg{
     color: rgb(189, 183, 183);
@@ -205,3 +210,50 @@ nav div button{
 .herof span{
     padding: 15px;
 }
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+
+footer .questions{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0px 37px 0px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+
+.footer-Items{
+    display: flex;
+    gap: 23px;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.footer a{
+    font-size: 14px;
+    color: white;
+}
+
+@media screen and (max-width: 580px) {
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  }
+@media screen and (max-width: 980px) {
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-Items{
+        padding: 0px 0px 23px 0px;
+    }
+  }
